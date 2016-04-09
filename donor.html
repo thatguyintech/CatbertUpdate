@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Patient/Donor Page</title>
+	<title>Donor Page</title>
 	<link rel="stylesheet" href="css/donor.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.css" rel="stylesheet"></head>
@@ -10,28 +10,29 @@
 	</div>
 	<img src = "img/tofillin.png" width = "100%" class="img-responsive" alt="Responsive image">
 	<div id = "selection">
+	<form action="http://127.0.0.1:8081/process_donor" method="POST">
 		<div id = "label"><b>Send me patient updates...</b></div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="immediate" value="option1" checked>
+		    <input type="radio" name="optionsRadios" id="immediate" value="immediately" checked>
 		    Immediately
 		  </label>
 		</div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="weekly" value="option2">
+		    <input type="radio" name="optionsRadios" id="weekly" value="weekly">
 		    Weekly
 		  </label>
 		</div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="monthly" value="option3">
+		    <input type="radio" name="optionsRadios" id="monthly" value="monthly">
 		    Monthly
 		  </label>
 		</div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="never" value="option4">
+		    <input type="radio" name="optionsRadios" id="never" value="never">
 		    Never
 		  </label>
 		</div>
@@ -39,13 +40,14 @@
 		<div class="phone-number col-lg-2">
 		    <label for="exampleInputName2">Phone Number</label>
 		    <input type="text" class="form-control" id="exampleInputName2" placeholder="Your Number Here">
-		  </div>
-		  </div>
-		  <br>
-		  <div id = "button" class="row">
-					<button type="button" class="btn btn-default">Update</button>
-				</div>
+		    </div>
+		    </div>
+		    <br>
+		    <div id = "button" class="row">
+					<button type="submit" class="btn btn-default">Update</button>
+			</div>
 		</div>
+	</form>
 		<br>
 		<br>
 		<br>

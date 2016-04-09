@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<head>
-		<title>Patient/Donor Page</title>
+		<title>Patient Page</title>
 		<link rel="stylesheet" href="css/patient.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -12,14 +12,14 @@
 	</div>
 	<div id = "text" class = "container-fluid">
 		<div id = "title" class="row"><h1>NEW UDPATE</h1></div>
-		<form action="http://127.0.0.1:8081/process_post" method="POST">
-		<div class="col-md-1" align="right">
+	<form action="http://127.0.0.1:8081/process_post" method="POST">
+		<div class="col-md-1" align="right" id = "text_title">
 			Title:
 		</div>
 		<div class="col-md-11">
 			<textarea class="form-control" rows="1" type="text" name="title"></textarea><br>
 		</div>
-		<div class="col-md-1" align="right">
+		<div class="col-md-1" align="right" id = "details">
 			Details:
 		</div>
 		<div class="col-md-11">

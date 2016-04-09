@@ -4,7 +4,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     overflow: scoll;
 }
@@ -58,4 +58,16 @@ textarea {
 
 #all_content {
     padding-bottom: 40px;
+}
+
+#text_title {
+    color:white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#details{
+    color:white;
+    font-size: 18px;
+    letter-spacing: 1px;
 }

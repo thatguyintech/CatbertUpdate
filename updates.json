@@ -1,10 +1,14 @@
 [
   {
-    "phoneNumber": "+14088939909",
-    "name": "Catherine"
+    "title": "Chest Pains",
+    "message": "Chest pains have beeng getting worse over the past few days. We hope to finish fundraising soon!"
   },
   {
-    "phoneNumber": "+16263765640",
-    "name": "Albert"
+    "title": "New Medicine is Available!",
+    "message": "We can obtain better medicine if we hit our stretch goal of fundraising!"
+  },
+  {
+    "title": "Post-Surgery Results",
+    "message": "Tortelliana has successfully removed her thyroid gland! She feels much happier now."
   }
 ]

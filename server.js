@@ -66,3 +66,27 @@ var server = app.listen(8081, function () {
   var port = server.address().port
   console.log("Example app listening at http://%s:%s", host, port)
 })
+
+// This responds to donor phone number and notification settings
+app.post('/process_donor', urlencodedParser, function (req, res) {
+    console.log("saving donor preferences!");
+    var prefs = req.body.optionsRadios;
+    var m = "1/12 - Chest Pains\n\n 3/2 - New medicine is available!\n\n 4/3 - Post Surgery Results";
+    if (prefs == "weekly") {
+        client.messages.create({
+            to: phoneNumber,
+            from: twilioPhone,
+            body: m,
+        }, function (err, message) {
+            if (!err) {
+                console.log('Success! The SID for this SMS message is:');
+                console.log(message.sid);
+                console.log('Message sent on:');
+                console.log(message.dateCreated);
+            } else {
+                console.log('Oops! There was an error.');
+            }
+        });
+    }
+    res.sendFile(__dirname + "/" + "donor.html")
+})
