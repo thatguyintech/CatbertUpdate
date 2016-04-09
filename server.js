@@ -19,18 +19,35 @@ var client = new twilio.RestClient(accountSid, authToken);
 
 // home page
 app.get('/', function (req, res) {
-   res.sendFile( __dirname + "/" + "patient.html" );
+   res.sendFile( __dirname + "/" + "index.html" );
+})
+
+// donor settings
+app.get('/donor', function (req, res) {
+    res.sendFile( __dirname + "/" + "donor.html");
+})
+
+// patients message broadcast
+app.get('/patient', function (req, res) {
+    res.sendFile( __dirname + "/" + "patient.html")
+})
+
+// patients list of messages
+app.get('/patient_updates', function (req, res) {
+    res.sendFile( __dirname + "/" + "patient_updates.html")
 })
 
 // This sends a message to subscribed numbers
 app.post('/process_post', urlencodedParser, function (req, res) {
     console.log("sending message!");
-    var m = String(req.body.message);
+    var t = req.body.title;
+    var m = req.body.message;
+    console.log(t);
     console.log(m);
     client.messages.create({
         to: phoneNumber,
         from: twilioPhone,
-        body: m,
+        body: t + '\n\n' + m,
     }, function(err, message) {
         if (!err) {
             console.log('Success! The SID for this SMS message is:');
@@ -41,7 +58,7 @@ app.post('/process_post', urlencodedParser, function (req, res) {
             console.log('Oops! There was an error.');
         }
     });
-    res.end("HI");
+    res.sendFile(__dirname + "/" + "patient.html");
 })
 
 var server = app.listen(8081, function () {

@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <head>
-	<title>Patient/Donor Page</title>
-	<link rel="stylesheet" href="bootstrap/css/patient.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></head>
+	<head>
+		<title>Patient/Donor Page</title>
+		<link rel="stylesheet" href="css/patient.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
 <body>
 	<div id = "nav_bar">
-		<img src = "bootstrap/img/navigation.png" width = "100%" class="img-responsive" alt="Responsive image">
+		<img src = "img/navigation.png" width = "100%" class="img-responsive" alt="Responsive image">
 	</div>
 	<div id = "text" class = "container-fluid">
 		<div id = "title" class="row"><h1>NEW UDPATE</h1></div>
-<!-- 		<textarea class="form-control" rows="3"></textarea>
-		<br>
-		<div id = "button" class="row">
-			<button type="button" class="btn btn-default">Send Away!</button>
-		</div>-->
 		<form action="http://127.0.0.1:8081/process_post" method="POST">
-		<textarea class="form-control" rows="3" type="text" name="message">  </textarea><br>
+		<div class="col-md-1" align="right">
+			Title:
+		</div>
+		<div class="col-md-11">
+			<textarea class="form-control" rows="1" type="text" name="title"></textarea><br>
+		</div>
+		<div class="col-md-1" align="right">
+			Details:
+		</div>
+		<div class="col-md-11">
+			<textarea class="form-control" rows="3" type="text" name="message"></textarea><br>
+		</div>
 		<button class="btn btn-default" type="submit">Send Away!</button>
 	</div>
 	<br>
 
 	<div id = "all_content" class = "col-lg-6 col-lg-offset-3">
 		<label for="exampleInputName2">Displayed Image</label>
-		<img src="bootstrap/img/example.jpg">
+		<img src="img/example.jpg">
 		<br>
 		<br>
 <!-- 		<div id = "Select_file">Select File</div> -->
