@@ -3060,27 +3060,26 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+    color: #FFFEFE;
+    background-color: #0EB5D9;
+    font-size: 18px;
+    padding: 16px 48px;
+    border-radius: 50px;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
+    color: #FFFEFE;
+    background-color: #6AD4EA
 }
 .btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+    color: #FFFEFE;
+    background-color: #6AD4EA
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+    color: #FFFEFE;
+    background-color: #6AD4EA
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -3091,9 +3090,8 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #333;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
+    color: #FFFEFE;
+    background-color: #6AD4EA
 }
 .btn-default:active,
 .btn-default.active,
@@ -3109,12 +3107,12 @@ fieldset[disabled] .btn-default:focus,
 .btn-default.disabled.focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
-  background-color: #fff;
-  border-color: #ccc;
+    color: #FFFEFE;
+    background-color: #6AD4EA
 }
 .btn-default .badge {
-  color: #fff;
-  background-color: #333;
+    color: #FFFEFE;
+    background-color: #6AD4EA
 }
 .btn-primary {
   color: #fff;

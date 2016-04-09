@@ -1,0 +1,13 @@
+#selection {
+    position: absolute;
+        width: 1000px;
+    left: 120px;
+}
+
+.btn-default {
+    color: #FFFEFE;
+    background-color: #0EB5D9;
+    font-size: 24px;
+    padding: 12px 24px;
+    border-radius: 25px;
+}
